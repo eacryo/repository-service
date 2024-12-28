@@ -16,4 +16,9 @@ public class RepositoryReduceController {
     public String reduce() {
         return "reduce success";
     }
+
+    @PostMapping("/reduceWithAmount")
+    public String reduceWithAmount(@RequestParam int amount) {
+        return "reduce success with " + amount;
+    }
 }
